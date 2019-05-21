@@ -1,0 +1,80 @@
+* {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.15; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("fonts/Roboto-Regular.ttf"); }
+@font-face {
+  font-family: 'Alfa';
+  src: url("fonts/AlfaSlabOne-Regular.ttf"); }
+body {
+  background-image: url(../img/main_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #494848;
+  margin: 0; }
+
+.logo {
+  width: 245px;
+  margin: -25px 0 40px 60px; }
+
+.header-img {
+  z-index: -10;
+  width: 100%; }
+
+.bannerInfo {
+  position: absolute;
+  bottom: 0px;
+  margin: 0;
+  background: #33333399;
+  width: 100%;
+  height: 55px;
+  text-align: left;
+  color: #51e3c2; }
+  .bannerInfo .videoTitle {
+    margin: 5%;
+    font-family: 'Alfa';
+    width: 220px; }
+  .bannerInfo img {
+    float: right;
+    position: absolute;
+    right: 5px;
+    bottom: 10px;
+    width: 30px; }
+
+.itemContent {
+  text-decoration: none;
+  margin: 10px 0; }
+  .itemContent .publishDate {
+    color: #ffffff;
+    margin-bottom: 5px;
+    font-size: 14px; }
+  .itemContent .description {
+    color: #868686; }
+
+.yt-thumb {
+  position: relative; }
+  .yt-thumb .thumb {
+    width: 100%; }
+
+.four {
+  text-decoration: none;
+  margin-top: 30px; }
+
+.singleVideo iframe {
+  min-height: 480px;
+  min-width: 640px; }
+.singleVideo .videoTitle {
+  font-family: 'Alfa';
+  color: #51e3c2; }
+.singleVideo .publishDate {
+  color: #ffffff; }
+.singleVideo .description {
+  color: #868686; }
+.singleVideo .back {
+  text-decoration: none;
+  color: #51e3c2;
+  font-size: 16px; }
+  .singleVideo .back img {
+    margin-right: 20px; }
