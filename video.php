@@ -57,13 +57,12 @@ $video = $obj->items[0];
 
 
   <!DOCTYPE html>
-  <html>
+  <html lang="en">
   <head>
     <meta charset="UTF-8">
     <title><?php echo $video->snippet->title ?></title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" />
     <link rel="stylesheet" href="styles/style.css" />
-    <meta http-equiv="content-type" content="text/html;charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
@@ -89,7 +88,7 @@ $video = $obj->items[0];
        <div class="row">
      <div class="eight columns">
        <div class="yt-video">
-        <iframe src="https://www.youtube.com/embed/'. $video->snippet->resourceId->videoId .'" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>></iframe>
+        <iframe src="https://www.youtube.com/embed/'. $video->snippet->resourceId->videoId .'" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
       </div>
          <div class="four columns">
@@ -106,7 +105,7 @@ $video = $obj->items[0];
          echo '
          </p>
 
-         <a class="back" href="/"><img src="img/back_arrow.svg" /> Back to list</a>
+         <a class="back" href="/"><img src="img/back_arrow.svg" alt="back button" /> Back to list</a>
        </div>
      </div>';
 
@@ -114,8 +113,8 @@ $video = $obj->items[0];
 ?>
 
 </section>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
   </body>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
   </html>

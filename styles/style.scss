@@ -22,13 +22,14 @@ body {
 }
 
 .logo {
-  width: 245px;
+  max-width: 100%;
   margin: -25px 0 40px 60px;
 }
 
 .header-img {
   z-index: -10;
   width:100%;
+  max-width: 100%;
 }
 
 .bannerInfo {
@@ -40,6 +41,7 @@ body {
   height: 55px;
   text-align: left;
   color: #51e3c2;
+
 
   .videoTitle {
     margin: 5%;
@@ -73,6 +75,12 @@ body {
 
 .yt-thumb {
   position:relative;
+  transition: .5s ease;
+
+
+  &:hover {
+    opacity: 0.5;
+  }
 
   .thumb {
     width: 100%;
@@ -85,10 +93,21 @@ body {
 }
 
 .singleVideo {
+
+  .yt-video {
+    overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
+
   iframe {
-    min-height: 480px;
-    min-width:640px;
+    border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;
   }
+}
 
   .videoTitle {
     font-family: 'Alfa';
@@ -113,4 +132,10 @@ body {
     }
   }
 
+}
+
+@media only screen and (max-width: 550px) {
+  .logo {
+    margin-top:-15px;
+  }
 }

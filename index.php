@@ -1,11 +1,10 @@
    <!DOCTYPE html>
-   <html>
+   <html lang="en">
    <head>
      <meta charset="UTF-8">
      <title>Beyond Technical Test</title>
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" />
      <link rel="stylesheet" href="styles/style.css" />
-     <meta http-equiv="content-type" content="text/html;charset=utf-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
    <body>
@@ -66,10 +65,10 @@
 			echo '
       <a class="four columns" href="video.php?id='. $video->id .'">
 			<div class="yt-thumb">
-				<img class="thumb" src="'.$video->snippet->thumbnails->medium->url.'"/>
+				<img class="thumb" src="'.$video->snippet->thumbnails->medium->url.'" alt="video thumbnail" />
         <div class="bannerInfo">
           <p class="videoTitle">'.$video->snippet->title.'</p>
-          <img src="img/play_button.svg" />
+          <img src="img/play_button.svg" alt="play button" />
         </div>
 			</div>
 				<div class="itemContent">
@@ -94,7 +93,7 @@
          </div>
      </div>
    </section>
-   </body>
    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
+   </body>
    </html>
